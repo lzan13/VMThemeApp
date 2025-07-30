@@ -1,0 +1,204 @@
+<resources>
+    <string name="app_name">VMLibrary</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="start">开始</string>
+    <string name="stop">停止</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="encode">编码</string>
+    <string name="mp4">保存 MP4</string>
+
+    <!--引导-->
+    <string name="guide_prev">上一步</string>
+    <string name="guide_next">下一步</string>
+    <string name="guide_finish">完成</string>
+    <string name="guide_title_0">各种消息</string>
+    <string name="guide_title_1">外出时间</string>
+    <string name="guide_title_2">休息时间</string>
+    <string name="guide_intro_0">语音，文字，图片，各种消息随心收发</string>
+    <string name="guide_intro_1">外出时间保证直达，不漏过任何消息</string>
+    <string name="guide_intro_2">休息时间，嗨起来吧 ^_^</string>
+
+    <string name="nav_chat">聊天</string>
+    <string name="nav_contacts">联系人</string>
+    <string name="nav_mine">我的</string>
+
+    <string name="search">搜索</string>
+    <string name="search_hint">输入搜索关键词</string>
+
+    <!--发现-->
+    <string name="publish_title">发布内容</string>
+
+    <!--我的-->
+    <string name="fans">粉丝</string>
+    <string name="follow">关注</string>
+    <string name="like_me">喜欢我</string>
+
+
+    <!--设置-->
+    <string name="settings">设置</string>
+
+    <string name="settings_about">关于</string>
+    <string name="about_content">一个移动 APP 模板项目，可方便快速的搭建一个移动项目</string>
+    <string name="about_copyright">Copyright &#169; 2020 VMLoft.\nAll Right Reserved.</string>
+
+    <string name="settings_feedback">问题反馈</string>
+    <string name="settings_feedback_hint">有什么问题可以反馈给我，帮助我改进</string>
+    <string name="feedback_contact">联系方式</string>
+    <string name="feedback_contact_hint">联系方式方便我们解决问题通知到您</string>
+    <string name="feedback_content">反馈内容</string>
+    <string name="feedback_content_hint">辛苦描述您遇到的问题</string>
+    <string name="feedback_screenshot">反馈截图</string>
+
+
+    <string name="version_check">检查更新</string>
+    <string name="version_check_toast">已经是最新版本</string>
+
+    <!--媒体相关设置-->
+    <string name="settings_media">图片资源</string>
+    <string name="media_auto">自动加载</string>
+    <string name="media_save">保存到相册</string>
+    <string name="media_save_hint">应用内拍照的图片将保存到系统相册</string>
+    <string name="media_clear">清空缓存</string>
+    <string name="media_clear_hint">缓存有利于节省流量，清空缓存可释放手机存储空间</string>
+    <string name="media_clear_toast">缓存清空完成</string>
+
+    <string name="settings_notify">通知设置</string>
+    <string name="notify_switch">通知开关</string>
+    <string name="notify_switch_msg">接收新消息通知</string>
+    <string name="notify_switch_call">接收音视频邀请通知通知</string>
+    <string name="notify_msg_detail">消息通知展示详情</string>
+    <string name="notify_msg_detail_hint">关闭后，收到新消息通知将不展示具体内容，展示为："你有一条新消息"</string>
+    <string name="notify_sound_vibrator">声音与振动</string>
+    <string name="notify_msg_system">新消息系统通知</string>
+    <string name="notify_msg_system_hint">前往系统设置修改消息声音与震动</string>
+    <string name="notify_msg_hint">你有一条新的消息通知</string>
+
+    <string name="settings_accessibility">辅助功能</string>
+    <string name="settings_dark">深色模式</string>
+    <string name="settings_dark_system">跟随系统</string>
+    <string name="settings_dark_system_hint">开启状态下，会自动跟随系统夜间模式切换应用内主题样式</string>
+    <string name="settings_dark_manual">手动设置</string>
+    <string name="settings_dark_normal">正常模式</string>
+
+    <!--个人信息-->
+    <string name="settings_info">个人信息</string>
+    <string name="info_edit">编辑资料</string>
+    <string name="info_cover">封面图</string>
+    <string name="info_avatar">头像</string>
+    <string name="info_username">用户名</string>
+    <string name="info_username_hint">用户名必须唯一，且只能设置一次，4-16个字符，不能包含除 a-z A-Z 0-9 _ . 外的其它字符</string>
+    <string name="info_nickname">昵称</string>
+    <string name="info_nickname_default">小透明</string>
+    <string name="info_nickname_hint">4-24字符，不包含特殊字符</string>
+    <string name="info_email">邮箱</string>
+    <string name="info_email_null">未绑定</string>
+    <string name="info_phone">手机号</string>
+    <string name="info_phone_null">未绑定</string>
+    <string name="info_auth">认证</string>
+    <string name="info_auth_no">未认证</string>
+    <string name="info_auth_yes">已认证</string>
+    <string name="info_gender">性别</string>
+    <string name="info_birthday">生日</string>
+    <string name="info_signature">个性签名</string>
+    <string name="info_signature_default">无个性不签名</string>
+    <string name="info_address">地址</string>
+    <string name="info_address_default">四海为家</string>
+    <string name="info_profession">职业</string>
+    <string name="info_not_set">未设置</string>
+
+    <string name="info_gender_man">男</string>
+    <string name="info_gender_woman">女</string>
+    <string name="info_gender_unknow">保密</string>
+
+    <string name="personal_auth">个人认证</string>
+    <string name="auth_real_name">真实姓名</string>
+    <string name="auth_real_name_error">真实姓名格式错误</string>
+    <string name="auth_id_card_number">身份证号</string>
+    <string name="auth_id_card_number_error">身份证号格式校验错误，请检查</string>
+    <string name="auth_hint">个人实名认证仅用作系统验证，不会泄露给任何其他人</string>
+
+    <!--注册登录-->
+    <string name="sign_welcome_to_back">嗨，欢迎回来！</string>
+    <string name="sign_welcome_to_join">你好，欢迎加入！</string>
+    <string name="sign_up">注册</string>
+    <string name="sign_in">登录</string>
+    <string name="sign_out">退出登录</string>
+    <string name="sign_out_hint">确定要退出登录吗？</string>
+    <string name="sign_to_sign_up">去注册</string>
+    <string name="sign_forget_password">忘记密码</string>
+    <string name="sign_account">账户</string>
+    <string name="sign_account_hint">手机号/邮箱</string>
+    <string name="sign_password">密码</string>
+    <string name="sign_password_hint">输入密码</string>
+    <string name="sign_code">验证码</string>
+    <string name="sign_code_hint">输入验证码</string>
+    <string name="sign_policy_prefix">已阅读并同意</string>
+    <string name="sign_privacy_policy">《隐私协议》</string>
+    <string name="sign_privacy_policy_hint">请阅读并同意《隐私协议》</string>
+
+    <string name="user_agreement">《用户协议》</string>
+    <string name="privacy_policy">《隐私政策》</string>
+    <string name="agreement_policy_prefix">进入表示你已阅读并同意</string>
+    <string name="agreement_policy_hint">请阅读并同意《用户协议》与《隐私政策》</string>
+    <string name="agreement_policy_dialog_title">用户协议与隐私政策</string>
+    <string name="agreement_policy_dialog_content">欢迎使用VMLibrary\n
+        1.为了向您提供功能服务，我们会根据您使用服务的具体需要，收集必要的信息；\n
+        2.未经您授权，我们不会与第三方共享或对外提供您的信息；\n
+        3.您可以访问、更正、删除您的个人信息，我们也将提供注销和更正方式。\n
+        请您阅读完整版《用户协议》和《隐私政策》，点击「同意」即表示您已阅读并同意全部条款。</string>
+
+    <!--拼接资源-->
+    <string name="comment_count">条评论</string>
+    <string name="score">分</string>
+    <string name="album_count">+</string>
+    <string name="publish_time">发布：</string>
+    <string name="category">分类：</string>
+    <string name="tag">标签：</string>
+
+    <!--通用-->
+    <string name="loading">加载中...</string>
+    <string name="wait">请稍等...</string>
+
+    <!--按钮-->
+    <string name="btn_save">保存</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_publish">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_agree">同意</string>
+    <string name="btn_disagree">不同意</string>
+
+    <!--输入-->
+    <string name="input_hint">请输入...</string>
+    <string name="input_not_null">输入内容不能为空</string>
+
+
+    <string name="feedback_type_opinion">意见建议</string>
+    <string name="feedback_type_shield">🙈不想看</string>
+    <string name="feedback_type_shield_hint">感谢反馈</string>
+    <string name="feedback_type_shield_post">不看内容</string>
+    <string name="feedback_type_shield_author">不看作者</string>
+    <string name="feedback_type_report">🙅内容不适</string>
+    <string name="feedback_type_report_ads">广告引流</string>
+    <string name="feedback_type_report_sensitivity">政治敏感</string>
+    <string name="feedback_type_report_illegal">违法违规</string>
+    <string name="feedback_type_report_porn_vulgar">色情低俗</string>
+    <string name="feedback_type_report_violence">血腥暴力</string>
+    <string name="feedback_type_report_guide">诱导信息</string>
+    <string name="feedback_type_report_uncivilized">谩骂攻击</string>
+    <string name="feedback_type_report_fraud">涉嫌诈骗</string>
+    <string name="feedback_type_report_uncomfortable">引人不适</string>
+    <string name="feedback_type_report_other">其它</string>
+
+
+    <!--广告资源-->
+    <string name="ads_label">广告</string>
+    <string name="ads_empty">虚位以待</string>
+
+    <string name="tb_live_msg_title">输入消息配置</string>
+    <string name="accessibility_permission_hint">辅助操作需要悬浮窗全新啊，当前未获取悬浮窗权限，请打开悬浮窗权限再使用</string>
+    <string name="accessibility_service_hint">此功能主要是用于辅助你实现一些重复繁琐的操作，让你解放双手，从而节省你的时间！\n\n 提示：开启此功能时会收到系统提醒，这是系统对使用此功能应用的例行弹窗提示！\n\n请放心，我们不会收集你的任何信息，请放心使用</string>
+</resources>

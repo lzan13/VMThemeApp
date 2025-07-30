@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题色-->
+    <color name="app_primary">#ffffff</color>
+    <color name="app_to_primary">#000000</color>
+    <color name="app_primary_dark">#ffffff</color>
+    <!--强调色-->
+    <color name="app_accent">#fffc455d</color>
+    <!--背景色-->
+    <color name="app_bg">#ffffff</color>
+</resources>
