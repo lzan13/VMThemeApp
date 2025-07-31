@@ -3,6 +3,7 @@ package com.vmloft.develop.library.common.ui.base
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.OnClickListener
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
@@ -26,9 +27,6 @@ abstract class BFragment<VB : ViewBinding> : Fragment() {
     protected var commonTopSpace: View? = null
     protected var commonTopBar: VMTopBar? = null
 
-    protected var emptyStatusLL: View? = null
-    protected var emptyStatusIV: ImageView? = null
-
     protected var mDialog: CommonDialog? = null
 
     protected var isLoaded: Boolean = false
@@ -43,11 +41,11 @@ abstract class BFragment<VB : ViewBinding> : Fragment() {
     open var isDarkStatusBar: Boolean = true
 
     private lateinit var _binding: VB
-    protected val mBinding get() = _binding
+    protected val binding get() = _binding
 
     override fun onCreateView(inflater: LayoutInflater, parent: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = initVB(inflater, parent)
-        return mBinding.root
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -61,21 +59,13 @@ abstract class BFragment<VB : ViewBinding> : Fragment() {
             isLoaded = true
             initData()
         }
-//        ReportManager.reportPageStart(this.javaClass.simpleName)
     }
 
-//    override fun onPause() {
-//        super.onPause()
-//        ReportManager.reportPageEnd(this.javaClass.simpleName)
-//    }
 
     override fun onHiddenChanged(hidden: Boolean) {
         super.onHiddenChanged(hidden)
-        if (hidden) {
-//            ReportManager.reportPageEnd(this.javaClass.simpleName)
-        } else {
+        if (!hidden) {
             CUtils.setDarkMode(requireActivity(), isDarkStatusBar)
-//            ReportManager.reportPageStart(this.javaClass.simpleName)
         }
     }
 
@@ -99,15 +89,12 @@ abstract class BFragment<VB : ViewBinding> : Fragment() {
     /**
      * 装载 TopBar
      */
-    private fun setupTopBar() {
+    protected open fun setupTopBar() {
         CUtils.setDarkMode(requireActivity(), isDarkStatusBar)
 
-        commonTopLL = mBinding.root.findViewById(R.id.commonTopLL)
-        commonTopBar = mBinding.root.findViewById(R.id.commonTopBar)
-        commonTopSpace = mBinding.root.findViewById(R.id.commonTopSpace)
-
-        emptyStatusLL = mBinding.root.findViewById(R.id.emptyStatusLL)
-        emptyStatusIV = mBinding.root.findViewById(R.id.emptyStatusIV)
+        commonTopLL = binding.root.findViewById(R.id.commonTopLL)
+        commonTopBar = binding.root.findViewById(R.id.commonTopBar)
+        commonTopSpace = binding.root.findViewById(R.id.commonTopSpace)
 
         if (!isHideTopSpace) {
             // 设置状态栏透明主题时，布局整体会上移，所以给头部 View 设置 StatusBar 的高度
@@ -115,7 +102,6 @@ abstract class BFragment<VB : ViewBinding> : Fragment() {
         }
 
         commonTopBar?.setCenter(isCenterTitle)
-//        commonTopBar?.setTitleStyle(R.style.AppText_Title)
     }
 
     /**
@@ -128,8 +114,11 @@ abstract class BFragment<VB : ViewBinding> : Fragment() {
     /**
      * 设置图标
      */
-    protected fun setTopIcon(resId: Int) {
+    protected fun setTopIcon(resId: Int, listener: OnClickListener? = null) {
         commonTopBar?.setIcon(resId)
+        if (listener != null) {
+            commonTopBar?.setIconListener(listener)
+        }
     }
 
     /**
@@ -163,8 +152,8 @@ abstract class BFragment<VB : ViewBinding> : Fragment() {
     /**
      * 设置子标题
      */
-    protected fun setTopSubtitle(title: String?) {
-        commonTopBar?.setSubtitle(title)
+    protected fun setTopSubtitle(subTitle: String) {
+        commonTopBar?.setSubtitle(subTitle)
     }
 
     /**
@@ -176,19 +165,12 @@ abstract class BFragment<VB : ViewBinding> : Fragment() {
     }
 
     /**
-     * 隐藏空态
+     * 设置结尾控件
      */
-    protected fun hideEmptyView() {
-        emptyStatusLL?.visibility = View.GONE
+    protected fun setTopEndView(view: View?) {
+        commonTopBar?.addEndView(view)
     }
 
-    /**
-     * 显示没有数据
-     */
-    protected fun showEmptyNoData() {
-//        emptyStatusIV?.setImageResource(R.drawable.ic_empty_data)
-        emptyStatusLL?.visibility = View.VISIBLE
-    }
 
     override fun onDestroy() {
         mDialog?.dismiss()

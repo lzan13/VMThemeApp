@@ -38,10 +38,10 @@ class GuideFragment : BFragment<FragmentGuideBinding>() {
     override fun initUI() {
         super.initUI()
 
-        VMView.changeShadow(mBinding.guideCardLL)
-        mBinding.guideCoverIV.setImageResource(requireArguments().getInt(argImgId))
-        mBinding.guideTitleTV.setText(requireArguments().getInt(argTitleId))
-        mBinding.guideBodyTV.setText(requireArguments().getInt(argBodyId))
+        VMView.changeShadow(binding.guideCardLL)
+        binding.guideCoverIV.setImageResource(requireArguments().getInt(argImgId))
+        binding.guideTitleTV.setText(requireArguments().getInt(argTitleId))
+        binding.guideBodyTV.setText(requireArguments().getInt(argBodyId))
     }
 
     override fun initData() {

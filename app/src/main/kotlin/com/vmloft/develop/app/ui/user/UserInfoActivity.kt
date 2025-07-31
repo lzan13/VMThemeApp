@@ -34,7 +34,6 @@ class UserInfoActivity : BActivity<ActivityUserInfoBinding>() {
         super.initUI()
         CUtils.setDarkMode(this, false)
 
-        setTopTitleColor(R.color.app_title_display)
 
     }
 

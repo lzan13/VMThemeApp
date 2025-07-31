@@ -10,7 +10,7 @@ import android.content.ComponentName
 import android.view.ViewGroup
 
 import com.vmloft.develop.app.R
-import com.vmloft.develop.app.databinding.FragmentHomeBinding
+import com.vmloft.develop.app.databinding.FragmentChatBinding
 import com.vmloft.develop.app.router.AppRouter
 import com.vmloft.develop.app.utils.errorBar
 import com.vmloft.develop.app.utils.show
@@ -25,9 +25,9 @@ import com.vmloft.develop.library.tools.permission.VMPermissionBean
  * Create by lzan13 on 2020/05/02 11:54
  * 描述：首页
  */
-class ChatFragment : BFragment<FragmentHomeBinding>() {
+class ChatFragment : BFragment<FragmentChatBinding>() {
 
-    override fun initVB(inflater: LayoutInflater, parent: ViewGroup?) = FragmentHomeBinding.inflate(inflater, parent, false)
+    override fun initVB(inflater: LayoutInflater, parent: ViewGroup?) = FragmentChatBinding.inflate(inflater, parent, false)
 
     override fun initUI() {
         super.initUI()
@@ -62,7 +62,7 @@ class ChatFragment : BFragment<FragmentHomeBinding>() {
         btn.id = tag.hashCode()
         btn.tag = tag
         btn.setOnClickListener(viewListener)
-        mBinding.viewGroup.addView(btn)
+        binding.viewGroup.addView(btn)
     }
 
     override fun initData() {

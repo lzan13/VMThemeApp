@@ -10,8 +10,8 @@ import android.text.style.ForegroundColorSpan
 import android.text.style.URLSpan
 import android.view.View
 
-import com.vmloft.develop.library.common.ui.widget.CommonDialog
 import com.vmloft.develop.app.R
+import com.vmloft.develop.library.common.ui.widget.CommonDialog
 import com.vmloft.develop.library.tools.utils.VMColor
 import com.vmloft.develop.library.tools.utils.VMStr
 import com.vmloft.develop.library.tools.utils.logger.VMLog

@@ -47,14 +47,14 @@ class CommonFragment : BFragment<FragmentDemoTabBinding>() {
             list.add("$tabName-$index")
         }
 
-        mBinding.smartRefreshLayout.setOnRefreshListener {
+        binding.smartRefreshLayout.setOnRefreshListener {
             VMLog.d("触发刷新")
         }
-        mBinding.smartRefreshLayout.setOnLoadMoreListener {
+        binding.smartRefreshLayout.setOnLoadMoreListener {
             VMLog.d("触发加载更多")
         }
-        mBinding.tableRowRV.layoutManager = LinearLayoutManager(context)
-        mBinding.tableRowRV.adapter = TestRecycleViewAdapter(requireContext(), list)
+        binding.tableRowRV.layoutManager = LinearLayoutManager(context)
+        binding.tableRowRV.adapter = TestRecycleViewAdapter(requireContext(), list)
     }
 
     class TestRecycleViewAdapter(context: Context, list: List<String>) : RecyclerView.Adapter<TestRecycleViewAdapter.ViewHolder>() {

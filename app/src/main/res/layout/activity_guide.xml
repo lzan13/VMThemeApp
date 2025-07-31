@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    android:background="@color/app_bg"
     tools:context=".ui.guide.GuideActivity">
 
     <androidx.viewpager.widget.ViewPager
@@ -20,7 +19,6 @@
         android:id="@+id/guideIndicatorView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/vm_dimen_48"
-        android:background="@color/app_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:vm_indicator_mode="inside"
         app:vm_indicator_radius="@dimen/vm_dimen_4"
@@ -30,7 +28,6 @@
         android:id="@+id/guidePrevBtn"
         style="@style/VMBtn.Flat"
         android:text="@string/guide_prev"
-        android:textColor="@color/app_tips"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -39,7 +36,6 @@
         android:id="@+id/guideNextBtn"
         style="@style/VMBtn.Flat"
         android:text="@string/guide_next"
-        android:textColor="@color/app_tips"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -47,7 +43,6 @@
         android:id="@+id/guideFinishBtn"
         style="@style/VMBtn.Flat"
         android:text="@string/guide_finish"
-        android:textColor="@color/app_tips"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

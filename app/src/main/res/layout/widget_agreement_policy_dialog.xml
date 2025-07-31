@@ -13,7 +13,6 @@
 
         <TextView
             android:id="@+id/dialogTitleTV"
-            style="@style/AppText.Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/vm_dimen_16"
@@ -32,7 +31,6 @@
             android:overScrollMode="always"
             android:scrollbarThumbVertical="@null"
             android:scrollbars="vertical"
-            android:textColor="@color/app_title"
             android:textSize="@dimen/vm_size_14"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +39,6 @@
 
         <TextView
             android:id="@+id/dialogNegativeTV"
-            style="@style/AppBtn.Cancel"
             android:layout_width="@dimen/vm_dimen_0"
             android:layout_height="@dimen/vm_dimen_40"
             android:layout_marginStart="@dimen/vm_dimen_24"
@@ -57,7 +54,6 @@
 
         <TextView
             android:id="@+id/dialogPositiveTV"
-            style="@style/AppBtn.Confirm"
             android:layout_width="@dimen/vm_dimen_0"
             android:layout_height="@dimen/vm_dimen_40"
             android:layout_marginStart="@dimen/vm_dimen_8"

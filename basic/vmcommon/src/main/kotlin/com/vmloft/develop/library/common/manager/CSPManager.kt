@@ -37,9 +37,9 @@ object CSPManager {
     // 隐私协议状态
     private val agreementPolicyKey = "policyStatusKey"
 
-    // 深色模式
-    private val darkModeSystemSwitchKey = "darkModeSystemSwitchKey"
-    private val darkModeManualKey = "darkModeManualKey"
+    // 主题模式与颜色
+    private val themeModeKey = "themeModeKey"
+    private val themeSkinKey = "themeSkinKey"
 
     // 记录键盘高度
     private val keyboardHeightKey = "keyboardHeightKey"
@@ -146,16 +146,16 @@ object CSPManager {
 
 
     /**
-     * 深色模式
+     * 主题模式
      */
-    fun isDarkModeSystemSwitch(): Boolean = get(settingsEntry, darkModeSystemSwitchKey, true) as Boolean
-    fun setDarkModeSystemSwitch(status: Boolean) {
-        putAsync(settingsEntry, darkModeSystemSwitchKey, status)
+    fun getThemeMode(): Int = get(settingsEntry, themeModeKey, CConstants.ThemeMode.system) as Int
+    fun setThemeMode(mode: Int) {
+        putAsync(settingsEntry, themeModeKey, mode)
     }
 
-    fun getDarkModeManual(): Int = get(settingsEntry, darkModeManualKey, -1) as Int
-    fun setDarkModeManual(mode: Int) {
-        putAsync(settingsEntry, darkModeManualKey, mode)
+    fun getThemeSkin(): String = get(settingsEntry, themeSkinKey, "") as String
+    fun setThemeSkin(theme: String) {
+        putAsync(settingsEntry, themeSkinKey, theme)
     }
 
     /**

@@ -5,6 +5,7 @@ import android.app.Dialog
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
+import android.view.View.OnClickListener
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 
@@ -25,6 +26,7 @@ abstract class BActivity<VB : ViewBinding> : AppCompatActivity() {
     protected var commonTopLL: View? = null
     protected var commonTopSpace: View? = null
     protected var commonTopBar: VMTopBar? = null
+
     protected var mDialog: Dialog? = null
 
     protected lateinit var mActivity: Activity
@@ -38,7 +40,7 @@ abstract class BActivity<VB : ViewBinding> : AppCompatActivity() {
     // 是否设置黑色状态栏
     open var isDarkStatusBar: Boolean = true
 
-    private lateinit var _binding: VB
+    protected lateinit var _binding: VB
     protected val binding get() = _binding
 
 
@@ -84,7 +86,7 @@ abstract class BActivity<VB : ViewBinding> : AppCompatActivity() {
     /**
      * 装载 TopBar
      */
-    private fun setupTopBar() {
+    protected open fun setupTopBar() {
         CUtils.setDarkMode(mActivity, isDarkStatusBar)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
@@ -97,10 +99,7 @@ abstract class BActivity<VB : ViewBinding> : AppCompatActivity() {
         }
 
         commonTopBar?.setCenter(isCenterTitle)
-//        commonTopBar?.setTitleStyle(R.style.AppText_Title)
-//        commonTopBar?.setIcon(R.drawable.ic_arrow_back)
         commonTopBar?.setIconListener { onBackPressed() }
-//        commonTopBar?.setEndBtnTextStyle(R.style.AppText_TopBarEndBtn)
     }
 
     /**
@@ -113,8 +112,11 @@ abstract class BActivity<VB : ViewBinding> : AppCompatActivity() {
     /**
      * 设置图标
      */
-    protected fun setTopIcon(resId: Int) {
+    protected fun setTopIcon(resId: Int, listener: OnClickListener? = null) {
         commonTopBar?.setIcon(resId)
+        if (listener != null) {
+            commonTopBar?.setIconListener(listener)
+        }
     }
 
     /**
@@ -155,8 +157,8 @@ abstract class BActivity<VB : ViewBinding> : AppCompatActivity() {
     /**
      * 设置子标题
      */
-    protected fun setTopSubtitle(title: String?) {
-        commonTopBar?.setSubtitle(title)
+    protected fun setTopSubtitle(subTitle: String) {
+        commonTopBar?.setSubtitle(subTitle)
     }
 
     /**

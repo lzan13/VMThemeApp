@@ -41,3 +41,4 @@ rootProject.name = "VMThemeApp"
 include(":app")
 include(":basic:vmbase")
 include(":basic:vmcommon")
+include(":skin")

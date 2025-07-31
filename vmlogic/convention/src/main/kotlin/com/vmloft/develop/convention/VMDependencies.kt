@@ -167,8 +167,7 @@ object VMDependencies {
     // webrtc 库
     const val webrtc = "org.webrtc:google-webrtc:1.0.32006"
 
-    // 自定义工具库 https://gitee.com/lzan13/VMLibrary
     // 自定义工具库 https://github.com/lzan13/VMLibrary
-    const val vmtools = "com.github.lzan13:VMLibrary:1.8.3"
+    const val vmtools = "com.github.lzan13:VMLibrary:1.9.2"
 
 }

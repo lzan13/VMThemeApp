@@ -24,6 +24,15 @@ object CConstants {
     const val timeDay = 24 * timeHour // 天
 
     /**
+     * 主题模式
+     */
+    object ThemeMode {
+        const val light = 0
+        const val dark = 1
+        const val system = 2
+    }
+
+    /**
      * 调试环境
      */
     object DebugEnv {

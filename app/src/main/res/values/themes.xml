@@ -1,53 +1,12 @@
 <resources>
 
-    <!-- 应用基础主题 -->
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="VMTheme">
-        <!-- 默认主要颜色，一般是 Toolbar 等颜色 -->
-        <item name="colorPrimary">@color/app_primary</item>
-        <!-- 深一些的主要色，一般是状态栏等颜色 -->
-        <item name="colorPrimaryDark">@color/app_primary_dark</item>
-        <!--各控件激活时的颜色，一般是 CheckBox、EditText、Switch、Spinner、RadioButton 等控件激活的颜色-->
-        <item name="colorAccent">@color/app_accent</item>
-
-        <!--        &lt;!&ndash;半透明状态栏&ndash;&gt;-->
-        <!--        <item name="android:windowTranslucentStatus">true</item>-->
-        <!--        &lt;!&ndash;设置状态栏颜色&ndash;&gt;-->
-        <!--        <item name="android:statusBarColor">@color/app_primary_dark</item>-->
-
-        <!--设置是否允许使用转场动画-->
-        <item name="android:windowContentTransitions">true</item>
-        <!--设置动画效果执行方式，是同步还是顺序执行-->
-        <!--A 退出和 B 进入动画是否同步执行-->
-        <item name="android:windowAllowEnterTransitionOverlap">false</item>
-        <!--B 返回和 A 重新进入是否同步执行-->
-        <item name="android:windowAllowReturnTransitionOverlap">true</item>
-        <!--指定进入和退出的转场动画-->
-        <!--<item name="android:windowEnterTransition">@transition/transition_enter</item>-->
-        <!--<item name="android:windowExitTransition">@null</item>-->
-        <!--<item name="android:windowReenterTransition">@null</item>-->
-        <!--<item name="android:windowReturnTransition">@transition/transition_return</item>-->
-
-    </style>
-
-    <!-- 启动页主题样式 -->
-    <!--    <style name="AppTheme.Splash">-->
-    <!--        &lt;!&ndash;半透明状态栏&ndash;&gt;-->
-    <!--        <item name="android:windowTranslucentStatus">true</item>-->
-    <!--        &lt;!&ndash;充满屏幕&ndash;&gt;-->
-    <!--        <item name="android:windowFullscreen">true</item>-->
-    <!--        &lt;!&ndash;设置状态栏颜色&ndash;&gt;-->
-    <!--        <item name="android:statusBarColor">@color/app_bg</item>-->
-    <!--        &lt;!&ndash;防止启动瞬间黑屏或白屏，程序启动时的背景图，可以设置为一张代表性的logo，或者设置app框架类图&ndash;&gt;-->
-    <!--        <item name="android:windowBackground">@drawable/splash_bg</item>-->
-    <!--    </style>-->
     <!-- 启动页主题样式 -->
     <style name="AppTheme.Splash" parent="Theme.SplashScreen">
         <!--启动画面背景颜色-->
-        <item name="windowSplashScreenBackground">@color/app_bg</item>
+        <item name="windowSplashScreenBackground">@color/app_background</item>
         <!-- 启动画面icon图标：这里可以是图片、帧动画等-->
-<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/img_baymax</item>-->
-        <item name="windowSplashScreenIconBackgroundColor">@color/app_bg</item>
+        <!--        <item name="windowSplashScreenAnimatedIcon">@drawable/img_baymax</item>-->
+        <item name="windowSplashScreenIconBackgroundColor">@color/app_background</item>
         <!-- icon动画在关闭之前显示的时长：最长时间为1000毫秒-->
         <item name="windowSplashScreenAnimationDuration">1000</item>
         <!-- 启动画面底部的 Brand 图片-->
@@ -71,22 +30,16 @@
         <item name="android:textSize">@dimen/vm_size_16</item>
     </style>
 
-    <style name="AppBtn.Feedback" parent="@style/AppBtn">
-        <item name="android:textSize">@dimen/vm_size_14</item>
-        <item name="android:textColor">@color/app_body</item>
-<!--        <item name="android:background">@drawable/selector_border_common_bg</item>-->
-    </style>
-
     <!--自定义控件 VMLineView 样式-->
     <style name="AppLVStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/app_bg_item</item>
+        <item name="android:background">@color/app_background</item>
 
         <!--图标大小-->
         <item name="vm_line_icon_size">@dimen/vm_dimen_24</item>
         <!--标题-->
-        <item name="vm_line_title_color">@color/app_title</item>
+        <item name="vm_line_title_color">@color/app_text_primary</item>
         <item name="vm_line_title_style">@style/AppText.LVTitle</item>
         <item name="vm_line_title_space">@dimen/vm_dimen_8</item>
 
@@ -96,7 +49,7 @@
         <item name="vm_line_caption_space">@dimen/vm_dimen_8</item>
 
         <!--底部描述-->
-        <item name="vm_line_description_color">@color/app_desc</item>
+        <item name="vm_line_description_color">@color/app_text_tertiary</item>
         <item name="vm_line_description_style">@style/AppText.Caption</item>
 
         <!--分割线-->

@@ -26,6 +26,7 @@
             <option value="$PROJECT_DIR$/basic" />
             <option value="$PROJECT_DIR$/basic/vmbase" />
             <option value="$PROJECT_DIR$/basic/vmcommon" />
+            <option value="$PROJECT_DIR$/skin" />
             <option value="$PROJECT_DIR$/vmlogic" />
             <option value="$PROJECT_DIR$/vmlogic/convention" />
           </set>

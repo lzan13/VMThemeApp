@@ -24,13 +24,13 @@ object AppRouter {
     const val appMultiPermission = "/VMLoft/MultiPermission"
     const val appOpenWeChat = "/VMLoft/OpenWeChat"
 
-    const val appNotifyTest = "/VMLoft/Notify"
 
     const val appMain = "/App/Main"
     const val appGuide = "/App/Guide"
 
     // 设置
     const val appSettings = "/App/Settings"
+    const val appTheme = "/App/Settings"
     const val appFeedback = "/App/Feedback"
 
     const val appUserInfo = "/App/appUserInfo"

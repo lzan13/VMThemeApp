@@ -3,7 +3,9 @@ package com.vmloft.develop.app.ui.main
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+
 import com.didi.drouter.annotation.Router
+
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 import com.vmloft.develop.app.R

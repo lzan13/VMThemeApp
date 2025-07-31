@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_bg"
+    android:background="@color/app_background"
     tools:context=".ui.main.MainActivity">
 
     <FrameLayout
@@ -15,16 +15,16 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/mainNav"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/vm_dimen_72"
+        android:layout_height="@dimen/vm_dimen_56"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="@dimen/vm_dimen_20"
         android:layout_marginBottom="@dimen/vm_dimen_8"
         android:background="@drawable/shape_nav_bg"
-        app:itemBackground="@drawable/shape_nav_bg"
+        app:itemBackground="@drawable/selector_nav_item_bg"
         app:itemHorizontalTranslationEnabled="false"
         app:itemIconTint="@color/selector_bottom_nav_icon"
         app:itemTextAppearanceActive="@style/AppText.BNV.Active"
         app:itemTextAppearanceInactive="@style/AppText.BNV.Inactive"
-        app:labelVisibilityMode="unlabeled"
+        app:labelVisibilityMode="labeled"
         app:menu="@menu/main_nav_menu" />
 </RelativeLayout>

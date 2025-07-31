@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_bg"
     tools:context=".ui.user.UserInfoActivity">
 
     <com.vmloft.develop.library.tools.widget.behavior.VMHeaderLayout
@@ -57,7 +56,6 @@
                 android:layout_marginEnd="@dimen/vm_margin_normal"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="@color/app_title_display"
                 app:layout_constraintBottom_toTopOf="@+id/mineAddressTV"
                 app:layout_constraintStart_toEndOf="@+id/mineAvatarIV"
                 app:layout_constraintTop_toTopOf="@+id/mineAvatarIV"
@@ -75,7 +73,6 @@
                 android:paddingTop="@dimen/vm_dimen_4"
                 android:paddingEnd="@dimen/vm_dimen_8"
                 android:paddingBottom="@dimen/vm_dimen_4"
-                android:textColor="@color/app_title_display"
                 app:layout_constraintBottom_toBottomOf="@+id/mineAvatarIV"
                 app:layout_constraintStart_toEndOf="@+id/mineAvatarIV"
                 app:layout_constraintTop_toBottomOf="@+id/mineNameTV"
@@ -89,7 +86,6 @@
                 android:layout_marginBottom="@dimen/vm_dimen_16"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:textColor="@color/app_title_display"
                 app:layout_constraintBottom_toTopOf="@+id/mineFansLL"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="无个性不签名，慢慢来吧！" />
@@ -150,8 +146,6 @@
             app:tabIndicatorGravity="bottom"
             app:tabIndicatorHeight="@dimen/vm_dimen_3"
             app:tabMode="scrollable"
-            app:tabSelectedTextColor="@color/app_tab_selected"
-            app:tabTextColor="@color/app_tab"
             app:vm_sticky_until_exit="true"
             app:vm_transformation="scroll" />
     </com.vmloft.develop.library.tools.widget.behavior.VMHeaderLayout>

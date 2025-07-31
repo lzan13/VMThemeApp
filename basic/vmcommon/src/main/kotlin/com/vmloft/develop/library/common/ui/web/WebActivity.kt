@@ -48,7 +48,7 @@ class WebActivity : BActivity<ActivityWebBinding>() {
             .createAgentWeb()
             .ready()
             .go("")
-        mAgentWeb.webCreator.webParentLayout.setBackgroundResource(R.color.app_bg)
+//        mAgentWeb.webCreator.webParentLayout.setBackgroundResource(R.color.app_background)
     }
 
     /**

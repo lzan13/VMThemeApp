@@ -4,18 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_bg"
     android:orientation="vertical"
-    tools:context=".ui.main.contacts.ContactsFragment"
-    >
+    tools:context=".ui.main.chat.ChatFragment">
 
     <include layout="@layout/widget_common_top_bar" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
+        <com.vmloft.develop.library.tools.widget.VMViewGroup
+            android:id="@+id/viewGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:padding="@dimen/vm_padding_normal" />
     </LinearLayout>
 </LinearLayout>
