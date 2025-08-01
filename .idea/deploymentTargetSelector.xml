@@ -5,7 +5,7 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="skin">
+      <SelectionState runConfigName="skin.skin">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

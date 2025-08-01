@@ -38,6 +38,12 @@ class VMLCommon : VMLibrary() {
             // 生命周期 EventBus
             "api"(VMDependencies.liveEventBus)
 
+//            "api"(VMDependencies.skinSupport)
+//            "api"(VMDependencies.skinSupportAppCompat)
+//            "api"(VMDependencies.skinSupportDesign)
+//            "api"(VMDependencies.skinSupportCardView)
+//            "api"(VMDependencies.skinSupportConstraint)
+
         }
     }
 }

@@ -3,5 +3,5 @@
     android:dither="true"
     android:shape="oval">
     <!--填充背景色-->
-    <solid android:color="@android:color/white" />
+    <solid android:color="@color/app_surface" />
 </shape>

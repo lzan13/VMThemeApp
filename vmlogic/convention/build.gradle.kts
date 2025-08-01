@@ -22,11 +22,12 @@ gradlePlugin {
     // 声明插件信息，
     plugins {
         // 这里的 register 参数可随意填写，主要应用在 id
+        // App 模块插件
         register("vm-app") {
             id = "vm-app"
             implementationClass = "com.vmloft.develop.convention.plugin.VMApp"
         }
-        // Library 插件
+        // Library 模块 插件
         register("vm-library") {
             id = "vm-library"
             implementationClass = "com.vmloft.develop.convention.plugin.VMLibrary"
@@ -43,10 +44,15 @@ gradlePlugin {
             id = "vm-l-request"
             implementationClass = "com.vmloft.develop.convention.plugin.VMLRequest"
         }
-        // 发布插件
+        // 发布模块插件
         register("vm-publish") {
             id = "vm-publish"
             implementationClass = "com.vmloft.develop.convention.plugin.VMPublish"
+        }
+        // 皮肤模块插件
+        register("vm-skin") {
+            id = "vm-skin"
+            implementationClass = "com.vmloft.develop.convention.plugin.VMSkin"
         }
     }
 }

@@ -3,12 +3,12 @@
 
     <!--底部导航样式-->
     <style name="AppText.BNV.Active" parent="@style/VMText.Caption">
-        <item name="android:textColor">@color/app_nav_active</item>
+        <item name="android:textColor">@color/app_icon</item>
         <item name="android:textSize">@dimen/vm_size_10</item>
     </style>
 
     <style name="AppText.BNV.Inactive" parent="@style/VMText.Caption">
-        <item name="android:textColor">@color/app_nav_inactive</item>
+        <item name="android:textColor">@color/app_icon_inactive</item>
         <item name="android:textSize">@dimen/vm_size_10</item>
     </style>
 </resources>

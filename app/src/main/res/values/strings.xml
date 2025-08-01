@@ -18,15 +18,18 @@
 
     <!--我的-->
     <string name="mine_item_theme">主题</string>
+    <string name="theme_preview">主题预览</string>
 
+    <string name="theme_mode">主题模式</string>
     <string name="theme_mode_light">Light</string>
     <string name="theme_mode_dark">Dark</string>
     <string name="theme_mode_system">System</string>
 
-    <string name="theme_color_golden">Golden Hour</string>
-    <string name="theme_color_basil">Basil Smash</string>
-    <string name="theme_color_blue">Blue Lagoon</string>
-    <string name="theme_color_cosmopolitan">Cosmopolitan</string>
+    <string name="theme_skin">主题皮肤</string>
+    <string name="theme_skin_golden">Golden Hour</string>
+    <string name="theme_skin_basil">Basil Smash</string>
+    <string name="theme_skin_blue">Blue Lagoon</string>
+    <string name="theme_skin_cosmopolitan">Cosmopolitan</string>
 
     <string name="mine_item_language">语言</string>
     <string name="mine_item_notification">通知</string>
@@ -86,30 +89,6 @@
     <string name="settings_dark_normal">正常模式</string>
 
     <!--个人信息-->
-    <string name="settings_info">个人信息</string>
-    <string name="info_edit">编辑资料</string>
-    <string name="info_cover">封面图</string>
-    <string name="info_avatar">头像</string>
-    <string name="info_username">用户名</string>
-    <string name="info_username_hint">用户名必须唯一，且只能设置一次，4-16个字符，不能包含除 a-z A-Z 0-9 _ . 外的其它字符</string>
-    <string name="info_nickname">昵称</string>
-    <string name="info_nickname_default">小透明</string>
-    <string name="info_nickname_hint">4-24字符，不包含特殊字符</string>
-    <string name="info_email">邮箱</string>
-    <string name="info_email_null">未绑定</string>
-    <string name="info_phone">手机号</string>
-    <string name="info_phone_null">未绑定</string>
-    <string name="info_auth">认证</string>
-    <string name="info_auth_no">未认证</string>
-    <string name="info_auth_yes">已认证</string>
-    <string name="info_gender">性别</string>
-    <string name="info_birthday">生日</string>
-    <string name="info_signature">个性签名</string>
-    <string name="info_signature_default">无个性不签名</string>
-    <string name="info_address">地址</string>
-    <string name="info_address_default">四海为家</string>
-    <string name="info_profession">职业</string>
-    <string name="info_not_set">未设置</string>
 
     <string name="info_gender_man">男</string>
     <string name="info_gender_woman">女</string>

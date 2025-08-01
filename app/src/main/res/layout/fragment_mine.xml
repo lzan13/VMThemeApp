@@ -27,7 +27,7 @@
         android:gravity="center"
         android:lines="1"
         android:text="User Name"
-        android:textColor="?attr/colorOnPrimary"
+        android:textColor="@color/app_text_primary"
         android:textSize="@dimen/vm_size_28"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,6 +52,7 @@
 
             <com.vmloft.develop.library.tools.widget.VMLineView
                 android:id="@+id/themeLV"
+                style="@style/AppLVStyle.Next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:vm_line_title="@string/mine_item_theme"
@@ -59,6 +60,7 @@
 
             <com.vmloft.develop.library.tools.widget.VMLineView
                 android:id="@+id/languageLV"
+                style="@style/AppLVStyle.Next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:vm_line_title="@string/mine_item_language"
@@ -66,6 +68,7 @@
 
             <com.vmloft.develop.library.tools.widget.VMLineView
                 android:id="@+id/notificationLV"
+                style="@style/AppLVStyle.Next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:vm_line_title="@string/mine_item_notification"
@@ -73,8 +76,10 @@
 
             <com.vmloft.develop.library.tools.widget.VMLineView
                 android:id="@+id/privacyLV"
+                style="@style/AppLVStyle.Next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:vm_line_decoration="hide"
                 app:vm_line_title="@string/mine_item_privacy"
                 tools:layout_height="@dimen/vm_dimen_48" />
         </LinearLayout>
@@ -88,6 +93,7 @@
 
             <com.vmloft.develop.library.tools.widget.VMLineView
                 android:id="@+id/helpLV"
+                style="@style/AppLVStyle.Next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:vm_line_title="@string/mine_item_help"
@@ -95,8 +101,10 @@
 
             <com.vmloft.develop.library.tools.widget.VMLineView
                 android:id="@+id/aboutLV"
+                style="@style/AppLVStyle.Next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:vm_line_decoration="hide"
                 app:vm_line_title="@string/mine_item_about"
                 tools:layout_height="@dimen/vm_dimen_48" />
         </LinearLayout>
@@ -110,8 +118,10 @@
 
             <com.vmloft.develop.library.tools.widget.VMLineView
                 android:id="@+id/inviteFriendLV"
+                style="@style/AppLVStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:vm_line_decoration="hide"
                 app:vm_line_title="@string/mine_item_invite_friend"
                 tools:layout_height="@dimen/vm_dimen_48" />
         </LinearLayout>
@@ -125,8 +135,10 @@
 
             <com.vmloft.develop.library.tools.widget.VMLineView
                 android:id="@+id/logoutLV"
+                style="@style/AppLVStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:vm_line_decoration="hide"
                 app:vm_line_title="@string/mine_item_logout"
                 tools:layout_height="@dimen/vm_dimen_48" />
         </LinearLayout>

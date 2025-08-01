@@ -19,6 +19,9 @@ import com.vmloft.develop.library.common.utils.CUtils
 class MineFragment : BFragment<FragmentMineBinding>() {
 
 
+    private var debugCount: Int = 0
+    private var lastClickTime: Long = 0L
+
     override fun initVB(inflater: LayoutInflater, parent: ViewGroup?) = FragmentMineBinding.inflate(inflater, parent, false)
 
     override fun initUI() {
@@ -27,7 +30,7 @@ class MineFragment : BFragment<FragmentMineBinding>() {
 
         setTopIcon(R.drawable.ic_setting_24)
         setTopEndIcon(R.drawable.ic_more_add) {
-
+            readyOpenDebug()
         }
         binding.themeLV.setOnClickListener {
             CRouter.go(AppRouter.appTheme)
@@ -39,5 +42,18 @@ class MineFragment : BFragment<FragmentMineBinding>() {
 
     }
 
-
+    /**
+     * Debug 开关
+     */
+    fun readyOpenDebug() {
+        val currentTime = System.currentTimeMillis()
+        if (currentTime - lastClickTime < 320) {
+            debugCount++
+        }
+        lastClickTime = currentTime
+        if (debugCount >= 9) {
+            debugCount = 0
+            CRouter.goDebug()
+        }
+    }
 }

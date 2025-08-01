@@ -4,84 +4,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.splash.SplashActivity">
+    android:background="@color/app_background"
+    tools:context=".ui.main.settings.ThemeActivity">
 
     <include layout="@layout/widget_common_top_bar" />
 
-    <LinearLayout
-        android:id="@+id/themeModeLL"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:layout_height="@dimen/vm_dimen_0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/commonTopLL">
 
-        <TextView
-            android:id="@+id/modeLightTV"
-            android:layout_width="@dimen/vm_dimen_56"
-            android:layout_height="@dimen/vm_dimen_56"
-            android:layout_margin="@dimen/vm_dimen_16"
-            android:background="@drawable/selector_theme_item_bg"
-            android:text="@string/theme_mode_light" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/vm_dimen_16">
 
-        <TextView
-            android:id="@+id/modeDarkTV"
-            android:layout_width="@dimen/vm_dimen_56"
-            android:layout_height="@dimen/vm_dimen_56"
-            android:layout_margin="@dimen/vm_dimen_16"
-            android:background="@drawable/selector_theme_item_bg"
-            android:text="@string/theme_mode_dark" />
+            <TextView
+                style="@style/AppText.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vm_dimen_16"
+                android:text="@string/theme_mode" />
 
-        <TextView
-            android:id="@+id/modeSystemTV"
-            android:layout_width="@dimen/vm_dimen_56"
-            android:layout_height="@dimen/vm_dimen_56"
-            android:layout_margin="@dimen/vm_dimen_16"
-            android:background="@drawable/selector_theme_item_bg"
-            android:text="@string/theme_mode_system" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/themeModeLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vm_dimen_4"
+                android:background="@drawable/shape_rectangle_bg_16"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/themeSkinLL"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/vm_dimen_24"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/themeModeLL">
+                <TextView
+                    android:id="@+id/modeLightTV"
+                    android:layout_width="@dimen/vm_dimen_56"
+                    android:layout_height="@dimen/vm_dimen_56"
+                    android:layout_margin="@dimen/vm_dimen_16"
+                    android:background="@drawable/selector_theme_item_bg"
+                    android:gravity="center"
+                    android:text="@string/theme_mode_light" />
 
-        <TextView
-            android:id="@+id/skinGoldenTV"
-            android:layout_width="@dimen/vm_dimen_56"
-            android:layout_height="@dimen/vm_dimen_56"
-            android:layout_margin="@dimen/vm_dimen_16"
-            android:background="@drawable/selector_theme_item_bg"
-            android:text="@string/theme_color_golden" />
+                <TextView
+                    android:id="@+id/modeDarkTV"
+                    android:layout_width="@dimen/vm_dimen_56"
+                    android:layout_height="@dimen/vm_dimen_56"
+                    android:layout_margin="@dimen/vm_dimen_16"
+                    android:background="@drawable/selector_theme_item_bg"
+                    android:gravity="center"
+                    android:text="@string/theme_mode_dark" />
 
-        <TextView
-            android:id="@+id/skinBasilTV"
-            android:layout_width="@dimen/vm_dimen_56"
-            android:layout_height="@dimen/vm_dimen_56"
-            android:layout_margin="@dimen/vm_dimen_16"
-            android:background="@drawable/selector_theme_item_bg"
-            android:text="@string/theme_color_basil" />
+                <TextView
+                    android:id="@+id/modeSystemTV"
+                    android:layout_width="@dimen/vm_dimen_56"
+                    android:layout_height="@dimen/vm_dimen_56"
+                    android:layout_margin="@dimen/vm_dimen_16"
+                    android:background="@drawable/selector_theme_item_bg"
+                    android:gravity="center"
+                    android:text="@string/theme_mode_system" />
+            </LinearLayout>
 
-        <TextView
-            android:id="@+id/skinBlueTV"
-            android:layout_width="@dimen/vm_dimen_56"
-            android:layout_height="@dimen/vm_dimen_56"
-            android:layout_margin="@dimen/vm_dimen_16"
-            android:background="@drawable/selector_theme_item_bg"
-            android:text="@string/theme_color_blue" />
+            <TextView
+                style="@style/AppText.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vm_dimen_16"
+                android:text="@string/theme_skin" />
 
-        <TextView
-            android:id="@+id/skinCosmopolitanTV"
-            android:layout_width="@dimen/vm_dimen_56"
-            android:layout_height="@dimen/vm_dimen_56"
-            android:layout_margin="@dimen/vm_dimen_16"
-            android:background="@drawable/selector_theme_item_bg"
-            android:text="@string/theme_color_cosmopolitan" />
+            <LinearLayout
+                android:id="@+id/themeSkinLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vm_dimen_4"
+                android:background="@drawable/shape_rectangle_bg_16"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/skinGoldenTV"
+                    android:layout_width="@dimen/vm_dimen_56"
+                    android:layout_height="@dimen/vm_dimen_56"
+                    android:layout_margin="@dimen/vm_dimen_16"
+                    android:background="@drawable/selector_theme_item_bg"
+                    android:gravity="center"
+                    android:text="@string/theme_skin_golden" />
 
+                <TextView
+                    android:id="@+id/skinBasilTV"
+                    android:layout_width="@dimen/vm_dimen_56"
+                    android:layout_height="@dimen/vm_dimen_56"
+                    android:layout_margin="@dimen/vm_dimen_16"
+                    android:background="@drawable/selector_theme_item_bg"
+                    android:gravity="center"
+                    android:text="@string/theme_skin_basil" />
+
+                <TextView
+                    android:id="@+id/skinBlueTV"
+                    android:layout_width="@dimen/vm_dimen_56"
+                    android:layout_height="@dimen/vm_dimen_56"
+                    android:layout_margin="@dimen/vm_dimen_16"
+                    android:background="@drawable/selector_theme_item_bg"
+                    android:gravity="center"
+                    android:text="@string/theme_skin_blue" />
+
+                <TextView
+                    android:id="@+id/skinCosmopolitanTV"
+                    android:layout_width="@dimen/vm_dimen_56"
+                    android:layout_height="@dimen/vm_dimen_56"
+                    android:layout_margin="@dimen/vm_dimen_16"
+                    android:background="@drawable/selector_theme_item_bg"
+                    android:gravity="center"
+                    android:text="@string/theme_skin_cosmopolitan" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/AppText.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vm_dimen_16"
+                android:text="@string/theme_preview" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vm_dimen_4"
+                android:background="@drawable/shape_rectangle_bg_16"
+                android:orientation="vertical">
+
+                <com.vmloft.develop.library.tools.widget.VMLineView
+                    style="@style/AppLVStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:vm_line_caption="Owner"
+                    app:vm_line_right_icon="@drawable/ic_arrow_next"
+                    app:vm_line_title="Alex Martinez" />
+
+                <com.vmloft.develop.library.tools.widget.VMLineView
+                    style="@style/AppLVStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:vm_line_description="Clear Chat History Clear Chat History Clear Chat History"
+                    app:vm_line_title="Clear Chat History" />
+
+                <com.vmloft.develop.library.tools.widget.VMLineView
+                    style="@style/AppLVStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:vm_line_description="描述内容描述内容描述内容描述内容描述内容"
+                    app:vm_line_title="标题内功" />
+
+                <com.vmloft.develop.library.tools.widget.VMLineView
+                    style="@style/AppLVStyle.Switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:vm_line_title="标题内功" />
+
+                <com.vmloft.develop.library.tools.widget.VMLineView
+                    android:id="@+id/switchLV"
+                    style="@style/AppLVStyle.Switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:vm_line_title="标题内功" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,3 @@
-import com.vmloft.develop.convention.VMDependencies
-
 plugins {
     // 自定义配置插件，用来统一管理配置和依赖
     id("vm-app")

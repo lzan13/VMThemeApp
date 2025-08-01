@@ -108,10 +108,12 @@ object VMDependencies {
     // Android消息总线，基于LiveData https://github.com/JeremyLiao/LiveEventBus
     const val liveEventBus = "io.github.jeremyliao:live-event-bus-x:1.8.0"
 
-    const val androidSkin = "skin.support:skin-support:3.1.4"                   // skin-support 基础控件支持
-    const val androidSkinDesign = "skin.support:skin-support-design:3.1.4"            // skin-support-design material design 控件支持[可选]
-    const val androidSkinCardView = "skin.support:skin-support-cardview:3.1.4"          // skin-support-cardview CardView 控件支持[可选]
-    const val androidSkinConstraint = "skin.support:skin-support-constraint-layout:3.1.4" // skin-support-constraint-layout ConstraintLayout 控件支持[可选]
+    const val skinSupport = "skin.support:skin-support:4.0.5"                   // skin-support 基础控件支持
+    const val skinSupportAppCompat = "skin.support:skin-support-appcompat:4.0.5"            // skin-support-design material design 控件支持[可选]
+    const val skinSupportDesign = "skin.support:skin-support-design:4.0.5"            // skin-support-design material design 控件支持[可选]
+    const val skinSupportCardView = "skin.support:skin-support-cardview:4.0.5"          // skin-support-cardview CardView 控件支持[可选]
+    const val skinSupportConstraint = "skin.support:skin-support-constraint-layout:4.0.5" // skin-support-constraint-layout ConstraintLayout 控件支持[可选]
+
     /**
      * 自定义控件库
      */

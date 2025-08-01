@@ -4,9 +4,12 @@ import android.app.Application
 import android.content.Context
 import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
+
 import com.scwang.smart.refresh.layout.SmartRefreshLayout
+
 import com.vmloft.develop.app.common.Constants
 import com.vmloft.develop.app.common.SPManager
+import com.vmloft.develop.app.common.SkinHelper
 import com.vmloft.develop.library.common.router.CRouter
 import com.vmloft.develop.library.common.manager.CSPManager
 import com.vmloft.develop.library.common.ui.notify.NotifyManager
@@ -50,15 +53,15 @@ class App : Application() {
 
         initRefresh()
 
+        SkinHelper.init(this)
     }
-
 
     /**
      * 初始化通用工具
      */
     private fun initCommon() {
         VMTools.init(appContext)
-        val level = if (CSPManager.isDebug()) Log.DEBUG else Log.ERROR
+        val level = if (CSPManager.isDebug()) Log.DEBUG else Log.WARN
         VMLog.init(level, )
 
         // 设置暗色主题模式
@@ -147,4 +150,5 @@ class App : Application() {
             DoubleCircleFooter(context)
         }
     }
+
 }

@@ -5,7 +5,6 @@
     <color name="app_primary_dark">#773B1A</color>
     <color name="app_primary_transparent">#66FFE2D1</color>
 
-
     <!--次要颜色，用于强调和区分主色的能力，常常用于悬浮按钮，复选框，单选按钮，需要突出的文本，以及链接标题等场景-->
     <color name="app_secondary">#FFA06C</color>
     <color name="app_secondary_on">#ffffff</color>
@@ -14,7 +13,7 @@
     <color name="app_tertiary_on">#ffffff</color>
 
     <!--强调色-->
-    <color name="app_accent">#773B1A</color>
+    <color name="app_accent">#FFA06C</color>
 
     <!--背景色-->
     <color name="app_background">#FAF8F7</color>
@@ -25,13 +24,18 @@
     <color name="app_surface_on">#1A1714</color>
 
     <!--错误颜色-->
-    <color name="app_error">#1AE72A2A</color>
-    <color name="app_error_on">#E72A2A</color>
+    <color name="app_error">#AA2615</color>
+    <color name="app_error_on">#AA2615</color>
 
     <!--文本-->
     <color name="app_text_primary">#1A1714</color>
     <color name="app_text_secondary">#46433F</color>
     <color name="app_text_tertiary">#898785</color>
+    <color name="app_text_tertiary_reverse">#C7C5C4</color>
+
+    <!--图标颜色-->
+    <color name="app_icon">#773B1A</color>
+    <color name="app_icon_inactive">#59773B1A</color>
 
     <!--分割线-->
     <color name="app_decoration">#EEEBEB</color>

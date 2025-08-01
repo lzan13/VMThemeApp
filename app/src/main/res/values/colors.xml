@@ -1,19 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--图标颜色-->
-    <color name="app_icon">#773B1A</color>
-
-    <!--导航颜色-->
-    <color name="app_nav_active">#773B1A</color>
-    <color name="app_nav_inactive">#59773B1A</color>
-    <color name="app_nav_bg">#33FFA06C</color>
-
-    <!--文本颜色-->
-    <color name="app_body">@color/vm_gray_black_87</color>
-    <color name="app_caption">@color/vm_gray_87</color>
-    <color name="app_desc">@color/vm_gray_87</color>
-    <color name="app_more">@color/vm_gray_87</color>
-    <color name="app_link">@color/vm_blue_87</color>
-    <color name="app_tips">@color/vm_gray_87</color>
 </resources>

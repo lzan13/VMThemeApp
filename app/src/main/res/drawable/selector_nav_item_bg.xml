@@ -4,7 +4,7 @@
         <shape android:dither="true" android:shape="rectangle">
             <corners android:radius="@dimen/vm_dimen_96" />
             <!--填充背景色-->
-            <solid android:color="@color/app_nav_bg" />
+            <solid android:color="@color/app_primary_transparent" />
         </shape>
     </item>
     <item>

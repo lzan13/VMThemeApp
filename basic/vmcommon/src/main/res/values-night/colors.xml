@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题色-->
+    <color name="app_primary">#FFE2D1</color>
+    <color name="app_primary_dark">#FFE2D1</color>
+    <color name="app_primary_transparent">#59773B1A</color>
+
+
+    <!--次要颜色，用于强调和区分主色的能力，常常用于悬浮按钮，复选框，单选按钮，需要突出的文本，以及链接标题等场景-->
+    <color name="app_secondary">#B86C42</color>
+    <color name="app_secondary_on">#000000</color>
+
+    <color name="app_tertiary">#FFBF9D</color>
+    <color name="app_tertiary_on">#ffffff</color>
+
+    <!--强调色-->
+    <color name="app_accent">#B86C42</color>
+
+    <!--背景色-->
+    <color name="app_background">#1A1714</color>
+    <color name="app_background_on">#FAF8F7</color>
+
+    <!--平面色-->
+    <color name="app_surface">#000000</color>
+    <color name="app_surface_on">#FAF8F7</color>
+
+    <!--错误颜色-->
+    <color name="app_error">#FB786F</color>
+    <color name="app_error_on">#FB786F</color>
+
+    <!--文本-->
+    <color name="app_text_primary">#FAF8F7</color>
+    <color name="app_text_secondary">#EEEBEB</color>
+    <color name="app_text_tertiary">#C7C5C4</color>
+
+    <!--图标颜色-->
+    <color name="app_icon">#FFE2D1</color>
+    <color name="app_icon_inactive">#59FFE2D1</color>
+
+    <!--分割线-->
+    <color name="app_decoration">#696563</color>
+</resources>

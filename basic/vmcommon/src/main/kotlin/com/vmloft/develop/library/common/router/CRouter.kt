@@ -190,6 +190,13 @@ object CRouter {
     }
 
     /**
+     * 跳转 debug 页面
+     */
+    fun goDebug() {
+        DRouter.build(commonDebug).start()
+    }
+
+    /**
      * 获取路由参数
      */
     fun optBoolean(intent: Intent, key: String): Boolean {

@@ -1,14 +1,19 @@
 package com.vmloft.develop.app.ui.main.settings
 
 
+import androidx.appcompat.app.AppCompatDelegate
 import com.didi.drouter.annotation.Router
+import com.vmloft.develop.app.R
 
 import com.vmloft.develop.app.router.AppRouter
 import com.vmloft.develop.app.databinding.ActivityThemeBinding
 import com.vmloft.develop.library.common.CConstants
 import com.vmloft.develop.library.common.manager.CSPManager
 import com.vmloft.develop.library.common.ui.base.BActivity
-import com.vmloft.develop.library.common.utils.CUtils
+import com.vmloft.develop.library.tools.utils.logger.VMLog
+import skin.support.SkinCompatManager
+import skin.support.SkinCompatManager.SkinLoaderListener
+import skin.support.SkinCompatManager.SkinLoaderStrategy
 
 
 /**
@@ -25,7 +30,9 @@ class ThemeActivity : BActivity<ActivityThemeBinding>() {
 
     override fun initUI() {
         super.initUI()
-        CUtils.setDarkMode(this, false)
+
+        setTopIcon(R.drawable.ic_back)
+
         binding.modeLightTV.setOnClickListener { switchThemeMode(CConstants.ThemeMode.light) }
         binding.modeDarkTV.setOnClickListener { switchThemeMode(CConstants.ThemeMode.dark) }
         binding.modeSystemTV.setOnClickListener { switchThemeMode(CConstants.ThemeMode.system) }
@@ -35,6 +42,9 @@ class ThemeActivity : BActivity<ActivityThemeBinding>() {
         binding.skinBlueTV.setOnClickListener { switchThemeSkin("blue") }
         binding.skinCosmopolitanTV.setOnClickListener { switchThemeSkin("cosmopolitan") }
 
+
+        binding.switchLV.setOnClickListener { binding.switchLV.isActivated = !binding.switchLV.isActivated }
+        binding.switchLV.isActivated = true
     }
 
     override fun initData() {
@@ -47,11 +57,40 @@ class ThemeActivity : BActivity<ActivityThemeBinding>() {
     private fun switchThemeMode(mode: Int) {
         themeMode = mode
         CSPManager.setThemeMode(mode)
+
+        if (CSPManager.getThemeMode() == CConstants.ThemeMode.light) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        } else if (CSPManager.getThemeMode() == CConstants.ThemeMode.dark) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+        }
+
         bindUI()
     }
 
     private fun switchThemeSkin(skin: String) {
+        themeSkin = skin
         CSPManager.setThemeSkin(skin)
+        if (themeSkin == "golden") {
+            // 恢复应用默认皮肤
+            SkinCompatManager.getInstance().restoreDefaultTheme()
+        } else {
+            // 指定皮肤插件
+            SkinCompatManager.getInstance().loadSkin("$themeSkin.skin", object : SkinLoaderListener {
+                override fun onStart() {
+                    VMLog.d("switchThemeSkin.onStart")
+                }
+
+                override fun onSuccess() {
+                    VMLog.d("switchThemeSkin.onSuccess")
+                }
+
+                override fun onFailed(msg: String) {
+                    VMLog.d("switchThemeSkin.onFailed msg:$msg")
+                }
+            }, SkinCompatManager.SKIN_LOADER_STRATEGY_ASSETS)
+        }
         bindUI()
     }
 
@@ -67,7 +106,6 @@ class ThemeActivity : BActivity<ActivityThemeBinding>() {
         binding.skinBasilTV.isSelected = themeSkin == "basil"
         binding.skinBlueTV.isSelected = themeSkin == "blue"
         binding.skinCosmopolitanTV.isSelected = themeSkin == "cosmopolitan"
-
     }
 
 }

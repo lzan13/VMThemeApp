@@ -27,6 +27,12 @@
             <option value="$PROJECT_DIR$/basic/vmbase" />
             <option value="$PROJECT_DIR$/basic/vmcommon" />
             <option value="$PROJECT_DIR$/skin" />
+            <option value="$PROJECT_DIR$/skin/skin" />
+            <option value="$PROJECT_DIR$/skin/skin-support" />
+            <option value="$PROJECT_DIR$/skin/skin-support-appcompat" />
+            <option value="$PROJECT_DIR$/skin/skin-support-cardview" />
+            <option value="$PROJECT_DIR$/skin/skin-support-constraint-layout" />
+            <option value="$PROJECT_DIR$/skin/skin-support-design" />
             <option value="$PROJECT_DIR$/vmlogic" />
             <option value="$PROJECT_DIR$/vmlogic/convention" />
           </set>

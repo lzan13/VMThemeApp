@@ -6,6 +6,11 @@ android{
     namespace = "com.vmloft.develop.library.common"
 }
 dependencies {
+    api(project(":skin:skin-support"))
+    api(project(":skin:skin-support-appcompat"))
+    api(project(":skin:skin-support-cardview"))
+    api(project(":skin:skin-support-constraint-layout"))
+    api(project(":skin:skin-support-design"))
 }
 
 //plugins {

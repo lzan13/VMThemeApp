@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.view.View
 import android.view.View.OnClickListener
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.SkinAppCompatDelegateImpl
 import androidx.viewbinding.ViewBinding
 
 import com.gyf.immersionbar.ImmersionBar
@@ -42,7 +44,6 @@ abstract class BActivity<VB : ViewBinding> : AppCompatActivity() {
 
     protected lateinit var _binding: VB
     protected val binding get() = _binding
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -195,4 +196,7 @@ abstract class BActivity<VB : ViewBinding> : AppCompatActivity() {
         super.onDestroy()
     }
 
+    override fun getDelegate(): AppCompatDelegate {
+        return SkinAppCompatDelegateImpl.get(this, this)
+    }
 }
